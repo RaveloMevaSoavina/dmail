@@ -8,12 +8,12 @@ const routes = [
           exact: true,
           component : lazy(()=> import('./container/Home/Home.js'))
         },
-        // {
-        //   path: READ_MAIL_PAGE,
-        //   name : "readmail",
-        //   exact: true,
-        //   component : lazy(()=> import('./container/ReadOneMail/ReadOneMail.js'))
-        // },
+        {
+          path: READ_MAIL_PAGE,
+          name : "readmail",
+          exact: true,
+          component : lazy(()=> import('./container/ReadOneMail/ReadOneMail.js'))
+        },
 ]
 
 export default routes;
