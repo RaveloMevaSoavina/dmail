@@ -1,5 +1,5 @@
 import {lazy} from 'react'
-import {CONTACT_PAGE, HOME_PAGE} from './settings/constants'
+import {READ_MAIL_PAGE, HOME_PAGE} from './settings/constants'
 
 const routes = [
         {
@@ -8,12 +8,12 @@ const routes = [
           exact: true,
           component : lazy(()=> import('./container/Home/Home.js'))
         },
-        {
-          path: CONTACT_PAGE,
-          name : "contact",
-          exact: true,
-          component : lazy(()=> import('./container/Contact/Contact.js'))
-        },
+        // {
+        //   path: READ_MAIL_PAGE,
+        //   name : "readmail",
+        //   exact: true,
+        //   component : lazy(()=> import('./container/ReadOneMail/ReadOneMail.js'))
+        // },
 ]
 
 export default routes;
